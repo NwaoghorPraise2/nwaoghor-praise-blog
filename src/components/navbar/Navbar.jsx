@@ -38,6 +38,11 @@ function Navbar() {
   return (
     <div>
      <Link href="./">Nwaoghor-Praise</Link>
+     <div>
+        {link.map((link)=>(
+          <Link key={link.id} href={link.url}>{link.title}</Link>
+        ))}
+     </div>
     </div>
   )
 }
